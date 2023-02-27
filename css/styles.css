@@ -80,7 +80,28 @@ button{
 }
 /* --------------------------Studio page-------------------------- */
 
-/*Header*/ 
+/*Header*/
+.page-header-container{
+   border-bottom: 1px solid #E7E9FC;;
+   display: flex; 
+   justify-content: space-around;
+   padding: 24px 0;
+}
+
+.nav{
+    display: flex;
+}
+
+.site-nav{
+    display: flex;
+    gap: 40px;
+}
+
+.address-list{
+    display: flex;
+    gap: 40px;
+}
+
 .header-logo {
    font-family: 'Raleway', sans-serif;
    font-weight: 800;
@@ -89,6 +110,7 @@ button{
    letter-spacing: 0.03em;
    text-transform: uppercase; 
    color:var(--secondary-color);
+   padding-right: 76px;
 } 
 .accent{
    color: var(--accent-color); 
@@ -154,6 +176,11 @@ button{
 .page-footer{
     background-color: var(--secondary-color);
 }
+
+.page-footer-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .footer-logo{
     font-family: 'Raleway';
     font-weight: 800;
@@ -164,7 +191,9 @@ button{
     color: #F4F4FD;
 }
 .footer-desc{
+    width: 264px;
     color:#E7E9FC;
+    padding-top:16px;
 }
 /* /Footer */
 
