@@ -54,14 +54,14 @@ button{
     text-align: center;
     text-transform: capitalize;
     color: var(--secondary-color);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .subtitle{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--secondary-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .btn{
@@ -96,6 +96,12 @@ button{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--main-gap);
+}
 /* ========================== Studio page============================ */
 
 /*-----------------------------Header---------------------------------*/
@@ -124,7 +130,8 @@ border-bottom: 1px solid #E7E9FC;
    letter-spacing: 0.03em;
    text-transform: uppercase; 
    color:var(--secondary-color);
-   padding: 24px 76px 24px 0;
+   margin-right: 76px;
+   padding: 24px 0;
 }
 .accent{
    color: var(--accent-color); 
@@ -145,8 +152,6 @@ border-bottom: 1px solid #E7E9FC;
    padding: 24px 0;
 }
 
-
-
 .nav-link:hover,
 .nav-link:focus{
     color: var(--accent-color);
@@ -156,6 +161,7 @@ border-bottom: 1px solid #E7E9FC;
     color: var(--accent-color);
 }
 /*----------------------------/Header-------------------------------------------*/
+
 
 /*---------------------------- Hero--------------------------------------------- */
 .hero{
@@ -176,7 +182,7 @@ border-bottom: 1px solid #E7E9FC;
     line-height: 1.07;
     text-align: center;
     color: var(--white-color);
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 .hero-btn{
     background-color: var(--accent-color);
@@ -197,36 +203,23 @@ border-bottom: 1px solid #E7E9FC;
 .principles{
     padding-top: 120px;
 }
-
-.principles-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--main-gap);
-}
 .principles-item{
     width: calc((100% - 3 * 24px) / 4)
 }
 
 /* -----------------------------/Principles of work section-------------------------------------------- */
 
+
 /*------------------------------ What are we doing section---------------------------------------- */
-.product-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--main-gap);
-}
 .product-item{
     width: calc((100% - 2 * 24px) / 3);
 }
 /*------------------------------ /What are we doing section---------------------------------------- */
+
+
 /*------------------------------ Our Team---------------------------------------- */
 .team{
     background-color: #F4F4FD;
-}
-.team-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--main-gap);
 }
 .team-item{
     width: calc((100% - 3 * 24px) / 4);
@@ -263,11 +256,13 @@ border-bottom: 1px solid #E7E9FC;
 .footer-desc{
     width: 264px;
     color:#E7E9FC;
-    padding-top:16px;
+    margin-top:16px;
 }
 /* --------------------------/Footer------------------------------------------- */
 
 /* ==========================/Studio page============================ */
+
+
 
 /*===========================Portfolio page========================== */
 .portfolio{
@@ -278,7 +273,7 @@ border-bottom: 1px solid #E7E9FC;
      display: flex;
      justify-content: center;
      gap: var(--main-gap);    
-     padding-bottom: 72px;
+     margin-bottom: 72px;
 }
 .portfolio-btn{
     background-color: #F4F4FD;
