@@ -110,7 +110,7 @@ border-bottom: 1px solid #E7E9FC;
 }
 .page-header-container{
    display: flex; 
-   justify-content: space-around;
+   justify-content: space-between;
 }
 .nav{
     display: flex;
@@ -166,22 +166,18 @@ border-bottom: 1px solid #E7E9FC;
 /*---------------------------- Hero--------------------------------------------- */
 .hero{
     background-color: var(--secondary-color);
-}
-
-.hero-container{
-    width: 496px;
-    margin-left: auto;
-    margin-right: auto;  
     padding-top: 180px;
     padding-bottom: 188px;
 }
-
 .hero-title{
+    width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     color: var(--white-color);
+    margin-left: auto;
+    margin-right: auto; 
     margin-bottom: 48px;
 }
 .hero-btn{
@@ -245,6 +241,7 @@ border-bottom: 1px solid #E7E9FC;
     padding-bottom: 100px;
 }
 .footer-logo{
+    display: inline-block;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -252,11 +249,11 @@ border-bottom: 1px solid #E7E9FC;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
+    margin-bottom:16px;
 }
 .footer-desc{
     width: 264px;
     color:#E7E9FC;
-    margin-top:16px;
 }
 /* --------------------------/Footer------------------------------------------- */
 
@@ -286,6 +283,7 @@ border-bottom: 1px solid #E7E9FC;
 .portfolio-btn:focus{
     background-color: #404BBF;
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list-product{
     display: flex;
@@ -299,5 +297,6 @@ border-bottom: 1px solid #E7E9FC;
 .portfolio-text-box{
    padding: 32px 16px;
    border: 1px solid #E7E9FC;
+   border-top:none;
 }
 /*===========================/Portfolio page========================== */
