@@ -6,6 +6,7 @@
 --main-font-size: 16px;
 --main-line-height:1.5;
 --main-letter-spacing:0.02em; 
+--main-gap:24px;
 } 
 
 body{
@@ -51,12 +52,14 @@ button{
     text-align: center;
     text-transform: capitalize;
     color: var(--secondary-color);
+    padding-bottom: 72px;
 }
 .subtitle{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--secondary-color);
+    padding-bottom: 8px;
 }
 
 .visually-hidden {
@@ -78,14 +81,22 @@ button{
     margin-right: auto;
     padding: 0 15px;
 }
-/* --------------------------Studio page-------------------------- */
 
-/*Header*/
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+/* ========================== Studio page============================ */
+
+/*-----------------------------Header---------------------------------*/
+.page-header{
+border-bottom: 1px solid #E7E9FC;
+}
 .page-header-container{
-   border-bottom: 1px solid #E7E9FC;;
    display: flex; 
    justify-content: space-around;
-   padding: 24px 0;
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 
 .nav{
@@ -99,7 +110,6 @@ button{
 
 .address-list{
     display: flex;
-    gap: 40px;
 }
 
 .header-logo {
@@ -124,6 +134,11 @@ button{
    font-style: normal;
    color: var(--main-color);
 }
+
+.address-item:first-child{
+padding-right: 40px;
+}
+
 .nav-link:hover,
 .nav-link:focus{
     color: var(--accent-color);
@@ -132,47 +147,97 @@ button{
 .address-link:focus{
     color: var(--accent-color);
 }
-/*/Header*/
+/*----------------------------/Header-------------------------------------------*/
 
-/* Hero */
+/*---------------------------- Hero--------------------------------------------- */
 .hero{
     background-color: var(--secondary-color);
 }
+
+.hero-container{
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding-top: 180px;
+    padding-bottom: 188px;
+}
+
 .hero-title{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    color: var(--white-color)
+    color: var(--white-color);
+    padding-bottom: 48px;
 }
 .hero-btn{
-    /* font-family: inherit; */
+    display: block;
     font-weight: 500;
     font-size: inherit;
     line-height: inherit; 
     letter-spacing: 0.04em;
     background-color: var(--accent-color);
     color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus{
     background-color: #404BBF;
 }
-/* /Hero */
+/* -----------------------------/Hero-------------------------------------------- */
 
-/* Our Team */
+/* -----------------------------Principles of work section-------------------------------------------- */
+.principles-list{
+    display: flex;
+    padding-top: 120px;
+    gap: var(--main-gap);
+}
+.principles-item{
+    width: calc((100%-3*var(--main-gap))/4);
+}
+
+/* -----------------------------/Principles of work section-------------------------------------------- */
+
+/*------------------------------ What are we doing section---------------------------------------- */
+.product-list{
+    display: flex;
+    gap: var(--main-gap);
+}
+.product-item{
+    width: calc((100%-2*var(--main-gap))/3);
+}
+/*------------------------------ /What are we doing section---------------------------------------- */
+/*------------------------------ Our Team---------------------------------------- */
 .team{
     background-color: #F4F4FD;
 }
+.team-list{
+    display: flex;
+    gap: var(--main-gap);
+}
+.team-item{
+    width: calc((100%-3*var(--main-gap))/4);
+}
+.text-box{
+    background: #FFFFFF;
+}
 .team-subtitle{
     text-align: center;
+    padding-top: 32px;
 }
 .team-desc{
     text-align: center;
+    padding-bottom: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
-/* /Our Team */
+/*------------------------------ /Our Team -------------------------------------*/
 
-/* Footer */
+/*------------------------------ Footer ----------------------------------------*/
 .page-footer{
     background-color: var(--secondary-color);
 }
@@ -195,11 +260,11 @@ button{
     color:#E7E9FC;
     padding-top:16px;
 }
-/* /Footer */
+/* --------------------------/Footer------------------------------------------- */
 
-/* --------------------------/Studio page-------------------------- */
+/* ==========================/Studio page============================ */
 
-/* --------------------------Portfolio page-------------------------- */
+/*===========================Portfolio page========================== */
 .portfolio-btn{
     font-weight: 500;
     font-size: inherit;
@@ -214,4 +279,4 @@ button{
     background-color: #404BBF;
     color: var(--white-color);
 }
-/* --------------------------/Portfolio page-------------------------- */
+/*===========================/Portfolio page========================== */
