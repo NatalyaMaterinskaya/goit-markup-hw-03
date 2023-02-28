@@ -30,6 +30,8 @@ ul{
 
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button{
@@ -62,6 +64,14 @@ button{
     padding-bottom: 8px;
 }
 
+.btn{
+    display: block;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: inherit; 
+    letter-spacing: 0.04em;
+
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -95,23 +105,17 @@ border-bottom: 1px solid #E7E9FC;
 .page-header-container{
    display: flex; 
    justify-content: space-around;
-   padding-top: 24px;
-   padding-bottom: 24px;
 }
-
 .nav{
     display: flex;
 }
-
 .site-nav{
     display: flex;
     gap: 40px;
 }
-
 .address-list{
     display: flex;
 }
-
 .header-logo {
    font-family: 'Raleway', sans-serif;
    font-weight: 800;
@@ -120,24 +124,28 @@ border-bottom: 1px solid #E7E9FC;
    letter-spacing: 0.03em;
    text-transform: uppercase; 
    color:var(--secondary-color);
-   padding-right: 76px;
-} 
+   padding: 24px 76px 24px 0;
+}
 .accent{
    color: var(--accent-color); 
 } 
 .nav-link {
    font-weight: 500;
    color: var(--secondary-color); 
+   display: inline-block;
+   padding: 24px 0;
 } 
-
+.address-item:first-child{
+   margin-right: 40px;
+}
 .address-link {
    font-style: normal;
    color: var(--main-color);
+   display: inline-block;
+   padding: 24px 0;
 }
 
-.address-item:first-child{
-padding-right: 40px;
-}
+
 
 .nav-link:hover,
 .nav-link:focus{
@@ -171,11 +179,6 @@ padding-right: 40px;
     padding-bottom: 48px;
 }
 .hero-btn{
-    display: block;
-    font-weight: 500;
-    font-size: inherit;
-    line-height: inherit; 
-    letter-spacing: 0.04em;
     background-color: var(--accent-color);
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -191,13 +194,17 @@ padding-right: 40px;
 /* -----------------------------/Hero-------------------------------------------- */
 
 /* -----------------------------Principles of work section-------------------------------------------- */
+.principles{
+    padding-top: 120px;
+}
+
 .principles-list{
     display: flex;
-    padding-top: 120px;
+    flex-wrap: wrap;
     gap: var(--main-gap);
 }
 .principles-item{
-    width: calc((100%-3*var(--main-gap))/4);
+    width: calc((100% - 3 * 24px) / 4)
 }
 
 /* -----------------------------/Principles of work section-------------------------------------------- */
@@ -205,10 +212,11 @@ padding-right: 40px;
 /*------------------------------ What are we doing section---------------------------------------- */
 .product-list{
     display: flex;
+    flex-wrap: wrap;
     gap: var(--main-gap);
 }
 .product-item{
-    width: calc((100%-2*var(--main-gap))/3);
+    width: calc((100% - 2 * 24px) / 3);
 }
 /*------------------------------ /What are we doing section---------------------------------------- */
 /*------------------------------ Our Team---------------------------------------- */
@@ -217,32 +225,29 @@ padding-right: 40px;
 }
 .team-list{
     display: flex;
+    flex-wrap: wrap;
     gap: var(--main-gap);
 }
 .team-item{
-    width: calc((100%-3*var(--main-gap))/4);
+    width: calc((100% - 3 * 24px) / 4);
 }
-.text-box{
+.team-text-box{
     background: #FFFFFF;
+    padding: 32px 16px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle{
     text-align: center;
-    padding-top: 32px;
 }
 .team-desc{
     text-align: center;
-    padding-bottom: 32px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 /*------------------------------ /Our Team -------------------------------------*/
 
 /*------------------------------ Footer ----------------------------------------*/
 .page-footer{
     background-color: var(--secondary-color);
-}
-
-.page-footer-container{
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -265,18 +270,39 @@ padding-right: 40px;
 /* ==========================/Studio page============================ */
 
 /*===========================Portfolio page========================== */
+.portfolio{
+     padding-top: 96px;
+     padding-bottom: 120px;
+}
+.portfolio-list-filter{
+     display: flex;
+     justify-content: center;
+     gap: var(--main-gap);    
+     padding-bottom: 72px;
+}
 .portfolio-btn{
-    font-weight: 500;
-    font-size: inherit;
-    line-height: inherit;
-    letter-spacing: 0.04em;
     background-color: #F4F4FD;
     color: var(--accent-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    padding: 12px 24px;
 }
-
 .portfolio-btn:hover,
 .portfolio-btn:focus{
     background-color: #404BBF;
     color: var(--white-color);
+}
+.portfolio-list-product{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--main-gap);
+    row-gap: 48px;
+}
+.portfolio-item-product{
+   width: calc((100% - 2 * 24px) / 3); 
+}  
+.portfolio-text-box{
+   padding: 32px 16px;
+   border: 1px solid #E7E9FC;
 }
 /*===========================/Portfolio page========================== */
